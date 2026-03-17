@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Idul Fitri 1447 H</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="app">
+        <button id="audio-toggle" class="audio-btn" aria-label="Toggle music">
+            <span class="music-icon">♪</span>
+        </button>
+        
+        <!-- Background Elements -->
+        <div class="stars-container"></div>
+        <div class="lanterns-container">
+            <div class="lantern lantern-1"></div>
+            <div class="lantern lantern-2"></div>
+            <div class="lantern lantern-3"></div>
+        </div>
+
+        <main class="hero">
+            <header class="greeting-header">
+                <span class="sub-greeting">Taqabbalallahu Minna Wa Minkum</span>
+                <h1 class="main-title">Selamat Hari Raya <br> <span class="highlight">Idul Fitri 1447 H</span></h1>
+            </header>
+
+            <section class="card-container">
+                <div class="greeting-card" id="card">
+                    <div class="card-inner">
+                        <div class="card-front" id="card-front">
+                            <div class="ornament"></div>
+                            <p class="message">Mohon Maaf Lahir & Batin</p>
+                            <button id="open-card" class="btn-primary">Buka Ucapan</button>
+                        </div>
+                        <div class="card-back" id="card-back">
+                            <h3 class="personal-greeting">Untuk <span id="recipient-name">Sahabat</span>,</h3>
+                            <p class="long-message">
+                                Jika Ramadan adalah musim hujan yang menyuburkan jiwa, maka Idul Fitri adalah pagi pertama setelah hujan reda — segar, bersih, dan penuh harapan.
+                            </p>
+                            <p class="long-message">Selamat Idul Fitri. Mohon maaf lahir dan batin atas segala kesalahan.</p>
+                            <p class="long-message">"Shandika Eka Putra"</p>
+                            <button id="close-card" class="btn-secondary mt-2">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <audio id="bg-audio" loop>
+                <source src="/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <footer class="footer">
+                <p>&copy; 2026 • Eid al-Fitr 1447 H</p>
+            </footer>
+        </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
