@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/ied/',
+  base: '/eid-al-fitr/',
 })
