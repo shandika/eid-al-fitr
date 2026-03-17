@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupInteractivity();
     
     // Minimal GSAP animation to ensure visibility
-    gsap.set(['.sub-greeting', '.main-title', '.greeting-card', '.lantern'], { opacity: 1, visibility: 'visible' });
+    gsap.set(['.sub-greeting', '.main-title', '.greeting-card', '.ketupat'], { opacity: 1, visibility: 'visible' });
     
     // Entrance animation
     gsap.from('.hero', { opacity: 0, y: 10, duration: 1, ease: 'power2.out' });
@@ -109,6 +109,7 @@ function setupInteractivity() {
         const y = (e.clientY - window.innerHeight / 2) / 50;
         gsap.to('.stars-container', { x: x * 0.5, y: y * 0.5, duration: 1 });
         gsap.to('.clouds-container', { x: x * 1, y: y * 1, duration: 1.5 });
+        gsap.to('.ketupat', { x: x * 2, y: y * 2, duration: 2, stagger: 0.1 });
     });
     
     window.addEventListener('click', (e) => {
